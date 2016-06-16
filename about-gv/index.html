@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GV About Page Cards</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+      body {
+        margin-top: 110px;
+        animation: fadein 3s;
+      }
+
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+
+      .card {
+        border: 0px solid #AAA;
+        height: 155px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .thumb {
+        position: relative;
+      }
+      .thumb img, .thumb .border {
+        top: 15px;
+        left: 10px;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+      .thumb img {
+        z-index: 20;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+      }
+      .thumb .border {
+        z-index: 10;
+        padding: 0;
+        border: 3px solid #CA3E11;
+      }
+      .card:hover .border {
+        top: 9px;
+        left: 4px;
+        height: 132px;
+        width: 132px;
+        cursor: pointer;
+        transition: all 150ms ease;
+      }
+      .card:hover img {
+        -webkit-filter: grayscale(0);
+      }
+      .text {
+        display: inline-block;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 150px;
+        color: #666;
+      }
+      .text h3, .text h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      .text h3 { color: #CA3E11; }
+      .text h4 { color: #345; }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h2 style="text-indent: 15px;">About The Team</h2>
+
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-4">
+
+          <div class="card">
+              <div class="thumb">
+                <img src="/img/thumb.ahmed.jpg" alt="Ahmed Farooki" />
+                <div class="border"></div>
+              </div>
+              <div class="text">
+                <h4>Ahmed Farooki</h4>
+                <h3>Abba Jaan</h3>
+                The man behind the kiddos.
+              </div>
+          </div>
+
+          <div class="card">
+              <div class="thumb">
+                <img src="/img/thumb.ahmed.jpg" alt="Ahmed Farooki" />
+                <div class="border"></div>
+              </div>
+              <div class="text">
+                <h4>Ahmed Farooki</h4>
+                <h3>Abba Jaan</h3>
+                The man behind the kiddos.
+              </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4">
+
+          <div class="card">
+              <div class="thumb">
+                <img src="/img/thumb.ahmed.jpg" alt="Ahmed Farooki" />
+                <div class="border"></div>
+              </div>
+              <div class="text">
+                <h4>Ahmed Farooki</h4>
+                <h3>Abba Jaan</h3>
+                The man behind the kiddos.
+              </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4">
+
+          <div class="card">
+              <div class="thumb">
+                <img src="/img/thumb.ahmed.jpg" alt="Ahmed Farooki" />
+                <div class="border"></div>
+              </div>
+              <div class="text">
+                <h4>Ahmed Farooki</h4>
+                <h3>Abba Jaan</h3>
+                The man behind the kiddos.
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
