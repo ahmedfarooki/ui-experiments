@@ -32,27 +32,36 @@
         border: 0px solid #AAA;
         height: 155px;
         width: 100%;
-        margin-bottom: 20px;
+        animation: slideup 750ms;
       }
+
+      @keyframes slideup {
+        from { margin-top: 200px; }
+        to   { margin-top: 0; }
+      }
+
       .thumb {
         position: relative;
       }
       .thumb img, .thumb .border {
-        top: 15px;
-        left: 10px;
         position: absolute;
-        width: 120px;
-        height: 120px;
         border-radius: 50%;
       }
       .thumb img {
+        top: 15px;
+        left: 10px;
+        width: 120px;
+        height: 120px;
         z-index: 20;
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
       }
       .thumb .border {
+        top: 20px;
+        left: 15px;
+        width: 110px;
+        height: 110px;
         z-index: 10;
-        padding: 0;
         border: 3px solid #CA3E11;
       }
       .card:hover .border {
@@ -69,7 +78,7 @@
       .text {
         display: inline-block;
         position: relative;
-        margin-top: 50px;
+        margin-top: 35px;
         margin-left: 150px;
         color: #666;
       }
@@ -77,8 +86,8 @@
         margin-top: 0;
         margin-bottom: 5px;
       }
-      .text h3 { color: #CA3E11; }
-      .text h4 { color: #345; }
+      .text .name { color: #345; }
+      .text .title { color: #CA3E11; }
     </style>
   </head>
   <body>
@@ -87,7 +96,7 @@
       <h2 style="text-indent: 15px;">About The Team</h2>
 
       <div class="row" style="margin-top: 20px;">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6">
 
           <div class="card">
               <div class="thumb">
@@ -95,26 +104,14 @@
                 <div class="border"></div>
               </div>
               <div class="text">
-                <h4>Ahmed Farooki</h4>
-                <h3>Abba Jaan</h3>
-                The man behind the kiddos.
-              </div>
-          </div>
-
-          <div class="card">
-              <div class="thumb">
-                <img src="../img/thumb.ahmed.jpg" alt="Ahmed Farooki" />
-                <div class="border"></div>
-              </div>
-              <div class="text">
-                <h4>Ahmed Farooki</h4>
-                <h3>Abba Jaan</h3>
+                <h4 class="title">Abba Jaan</h4>
+                <h4 class="name">Ahmed Farooki</h4>
                 The man behind the kiddos.
               </div>
           </div>
 
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6">
 
           <div class="card">
               <div class="thumb">
@@ -122,14 +119,14 @@
                 <div class="border"></div>
               </div>
               <div class="text">
-                <h4>Ahmed Farooki</h4>
-                <h3>Abba Jaan</h3>
+                <h4 class="title">Abba Jaan</h4>
+                <h4 class="name">Ahmed Farooki</h4>
                 The man behind the kiddos.
               </div>
           </div>
 
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6">
 
           <div class="card">
               <div class="thumb">
@@ -137,14 +134,28 @@
                 <div class="border"></div>
               </div>
               <div class="text">
-                <h4>Ahmed Farooki</h4>
-                <h3>Abba Jaan</h3>
+                <h4 class="title">Abba Jaan</h4>
+                <h4 class="name">Ahmed Farooki</h4>
                 The man behind the kiddos.
               </div>
           </div>
 
         </div>
+        <div class="col-lg-4 col-md-6">
 
+          <div class="card">
+              <div class="thumb">
+                <img src="../img/thumb.saleh.jpg" alt="Ahmed Farooki" />
+                <div class="border"></div>
+              </div>
+              <div class="text">
+                <h4 class="title">Babby Brudder</h4>
+                <h4 class="name">Saleh</h4>
+                The baby boy.
+              </div>
+          </div>
+
+        </div>
       </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
